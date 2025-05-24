@@ -1,125 +1,149 @@
-*{
+/* Reset básico */
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family: Arial;
-}
 
-nav ul{
-    list-style-type: none;
-}
+/* Body */
 
-nav li{
-    line-height: 2.5em;
-}
-
-nav a{
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
     color: #ddd;
-    display: block;
-    padding: 0 4em;
-    text-decoration: none;
 }
 
-nav a:hover{
+
+/* Navegación */
+
+nav ul {
+    list-style-type: none;
+    background-color: rgb(158, 11, 40);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ddd;
+    padding: 1em 1.5em;
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
     background: rgba(0, 0, 0, 0.5);
 }
 
-nav>ul{
-    overflow: hidden;
-    background-color: rgb(158, 11, 40);
-    width: 100%;
-}
 
-nav>ul>li{
-    float: left;
-}
+/* Banner principal */
 
-nav>ul>li>ul{
-    position: absolute;
-    display: none;
-}
-
-nav>ul>li:hover ul{
-    display: block;
-}
-
-nav>ul>li>ul>li{
-    background-color: rgb(158, 11, 40);
-}
-body{
-    box-shadow: chocolate;
-    background-color: rgb(0, 0, 0);
-    image-rendering: crisp-edges;
-}
-
-.divuno{
-    background-repeat: no-repeat;
-    background-size: 10rem;
-    margin-right: 800px;
-    margin-left: 300px;
-}
-.title{
-    padding: auto;
-    position: relative;
-    font-size: 2rem;
-    text-align: left;
-    color: rgb(255, 255, 255);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.Cronicas{
-    background-image: url(../img/Banner.32.webp);
+.Cronicas {
+    background-image: url('../img/Banner.32.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 4rem;
-
-    color: rgb(255, 255, 255);
+    height: 300px;
+    /* altura fija para banner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     text-align: center;
+    padding: 0 1rem;
 }
 
 
+/* Contenedor para texto y video */
 
-.dosguerras{
-    margin-top: 40px;
-    position: absolute;
-    margin-left: 800px;
-    align-items: end;
-    size: 300px;
-    border-radius: 40px;
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    color: #ddd;
 }
 
-.siglo{
-    position: relative;
-    box-shadow: yellow;
+
+/* Texto explicativo */
+
+.content-text {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
     text-align: justify;
-    padding: auto;
-    color: honeydew;
-
-}
-.primera{
-    position: relative;
-    text-align: justify;
-    padding: auto;
-    color: honeydew;
-    margin-right: 200px;
-    margin-left: 900px;
 }
 
-.guerra1{
-    margin-top: 50px;
-    position: absolute;
-    
-    margin-left: 200px;
-    align-items: left;
-    size: 200px;
-    border-radius: 40px;
 
+/* Video */
+
+.content-video {
+    flex: 1;
+    max-width: 600px;
 }
 
-.war{
-    color: rgb(235, 1, 1);
-} 
+.content-video iframe {
+    width: 100%;
+    height: 340px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* Línea separadora */
+
+hr {
+    border: 1px solid crimson;
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+
+/* Media queries para pantallas pequeñas */
+
+@media (max-width: 900px) {
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-video iframe {
+        height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .Cronicas {
+        height: 200px;
+        font-size: 2rem;
+        padding: 0 0.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li a {
+        padding: 0.75em 1em;
+    }
+    .Cronicas {
+        font-size: 1.5rem;
+        padding: 1rem 0.5rem;
+        height: 150px;
+    }
+}
