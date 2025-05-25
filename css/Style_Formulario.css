@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #000000, #666161);
+    background: linear-gradient(135deg, #393939, #433f3f);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@ body {
 }
 
 .formulario {
-    background: rgb(53, 50, 50);
+    background: rgb(29, 28, 28);
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 12px 30px rgba(255, 255, 255, 0.15);
