@@ -187,16 +187,21 @@ p {
 img {
     display: block;
     margin: 20px auto;
-    max-width: 90%;
+    height: 400px;
+    /* Altura fija */
+    width: auto;
+    /* Ancho se ajusta automáticamente */
+    object-fit: cover;
+    /* Recorta la imagen sin deformarla */
     border: 4px solid crimson;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 
 /* Div con id para margen */
 
 div[id] {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 
