@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #000000;
+    color: #000000;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,8 +10,8 @@ body {
 }
 
 header {
-    background-color: #007BFF;
-    color: #fff;
+    background-color: #ffffff;
+    color: #ff0000;
     padding: 20px;
     width: 100%;
     text-align: center;
@@ -24,25 +24,89 @@ main {
 }
 
 .persona {
-    background-color: #fff;
+    background-color: #474343;
     margin: 10px 0;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .persona h2 {
-    color: #007BFF;
+    color: #f7f7f7;
     margin: 0;
 }
 
 .persona p {
     margin: 10px 0 0;
 }
+
 .persona img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 3px solid rgba(126, 196, 231, 0.74);
+    border: 3px solid rgba(249, 15, 15, 0.74);
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    /* Centra los botones horizontalmente */
+    gap: 15px;
+    /* Espacio entre los botones */
+    margin-top: 20px;
+    align-items: center;
+    /* Alinea verticalmente */
+}
+
+.boton input[type="submit"] {
+    padding: 10px 20px;
+    background-color: crimson;
+    border: none;
+    color: rgb(245, 224, 224);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton input[type="submit"]:hover {
+    background-color: darkred;
+}
+
+.btn-salir {
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-salir:hover {
+    background-color: black;
+}
+
+
+/* Banner principal */
+
+.Cronicas {
+    background-image: url('../img/ajedres.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    /* altura fija para banner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 0 1rem;
 }

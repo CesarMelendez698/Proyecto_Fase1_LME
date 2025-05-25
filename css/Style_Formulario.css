@@ -2,64 +2,64 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  body {
+}
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    background: linear-gradient(135deg, #000000, #eea1a1);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
-  }
-  
-  .formulario {
-    background: white;
+}
+
+.formulario {
+    background: rgb(53, 50, 50);
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.15);
     width: 100%;
     max-width: 600px;
     transition: 0.3s;
-  }
-  
-  .formulario:hover {
+}
+
+.formulario:hover {
     transform: scale(1.01);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  }
-  
-  .formulario h2 {
+}
+
+.formulario h2 {
     text-align: center;
     margin-bottom: 30px;
-    color: #0d47a1;
+    color: #ab0303;
     font-size: 28px;
     border-bottom: 2px solid #0d47a1;
     padding-bottom: 10px;
-  }
-  
-  .campo {
+}
+
+.campo {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     gap: 15px;
-  }
-  
-  .img {
+}
+
+.img {
     width: 28px;
     height: 28px;
     pointer-events: none;
-  }
-  
-  .campo label {
+}
+
+.campo label {
     min-width: 130px;
     font-weight: bold;
-    color: #333;
-  }
-  
-  .campo input[type="text"],
-  .campo input[type="email"],
-  .campo textarea {
+    color: #ffffff;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo textarea {
     flex: 1;
     padding: 12px 16px;
     border: 2px solid #ddd;
@@ -67,28 +67,28 @@
     font-size: 16px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     background-color: #f9f9f9;
-  }
-  
-  .campo input[type="text"]:focus,
-  .campo input[type="email"]:focus,
-  .campo textarea:focus {
-    border-color: #2196f3;
+}
+
+.campo input[type="text"]:focus,
+.campo input[type="email"]:focus,
+.campo textarea:focus {
+    border-color: #b7bfc5;
     box-shadow: 0 0 5px rgba(33, 150, 243, 0.3);
     outline: none;
     background-color: #fff;
-  }
-  
-  textarea {
+}
+
+textarea {
     resize: vertical;
     min-height: 100px;
-  }
-  
-  .boton {
+}
+
+.boton {
     text-align: center;
     margin-top: 30px;
-  }
-  
-  .boton input[type="submit"] {
+}
+
+.boton input[type="submit"] {
     background: linear-gradient(135deg, #42a5f5, #1e88e5);
     color: white;
     border: none;
@@ -98,10 +98,50 @@
     border-radius: 12px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s;
-  }
-  
-  .boton input[type="submit"]:hover {
+}
+
+.boton input[type="submit"]:hover {
     background: linear-gradient(135deg, #1e88e5, #1565c0);
     transform: translateY(-2px);
-  }
-  
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    /* Centra los botones horizontalmente */
+    gap: 15px;
+    /* Espacio entre los botones */
+    margin-top: 20px;
+    align-items: center;
+    /* Alinea verticalmente */
+}
+
+.boton input[type="submit"] {
+    padding: 10px 20px;
+    background-color: crimson;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton input[type="submit"]:hover {
+    background-color: darkred;
+}
+
+.btn-salir {
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-salir:hover {
+    background-color: black;
+}

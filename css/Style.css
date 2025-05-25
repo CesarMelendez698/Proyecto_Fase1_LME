@@ -28,6 +28,8 @@ nav ul {
 
 nav ul li {
     margin: 0;
+    position: relative;
+    /* Necesario para el posicionamiento del submenú */
 }
 
 nav ul li a {
@@ -39,6 +41,48 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Submenús (ul dentro de ul) */
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(158, 11, 40);
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    min-width: 160px;
+    border-radius: 0 0 5px 5px;
+    z-index: 1000;
+    top: 100%;
+    /* Para que aparezca justo debajo del padre */
+    left: 0;
+}
+
+
+/* Mostrar submenú al pasar el mouse sobre el li padre */
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+
+/* Estilos para los items dentro del submenú */
+
+nav ul ul li {
+    width: 100%;
+}
+
+nav ul ul li a {
+    padding: 0.75em 1em;
+    white-space: nowrap;
+    color: #ddd;
+}
+
+nav ul ul li a:hover {
     background: rgba(0, 0, 0, 0.5);
 }
 
