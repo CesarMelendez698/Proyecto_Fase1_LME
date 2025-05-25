@@ -191,3 +191,82 @@ hr {
         height: 150px;
     }
 }
+
+
+/* Escondemos el checkbox */
+
+#menu-toggle {
+    display: none;
+}
+
+
+/* Por defecto, ocultamos el menú */
+
+nav ul {
+    display: none;
+}
+
+
+/* Estilos base para el nav */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Espacia botón y menú */
+    padding: 0 0em;
+}
+
+
+/* Estilo del botón (☰) */
+
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    padding: 0.90em 1em;
+    user-select: none;
+    background-color: rgb(158, 11, 40);
+    border: none;
+    /* asegura que no tenga borde */
+    margin-left: 0rem;
+    /* lo alinea a un lado */
+}
+
+
+/* Ocultamos el checkbox */
+
+#menu-toggle {
+    display: none;
+}
+
+
+/* Ocultamos el menú por defecto */
+
+nav ul {
+    display: none;
+    width: 150%;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(158, 11, 40);
+}
+
+
+/* Mostramos el menú si el checkbox está activado */
+
+#menu-toggle:checked+.menu-icon+ul {
+    display: flex;
+}
+
+nav ul li a {
+    color: #ddd;
+    padding: 1em 1.5em;
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: normal;
+    text-shadow: none;
+}

@@ -12,28 +12,25 @@
 
 <body>
 
-
-
-
     <div class="formulario">
         <h2>Formulario de Consulta</h2>
         <form action="#" method="post">
             <div class="campo">
                 <input type="image" src="img/user.png" class="img">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="nombre" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" title="El nombre solo puede contener letras y espacios.">
             </div>
 
             <div class="campo">
                 <input type="image" src="img/user.png" class="img">
                 <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" name="apellidos" required>
+                <input type="text" id="apellidos" name="apellidos" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" title="Los apellidos solo pueden contener letras y espacios.">
             </div>
 
             <div class="campo">
                 <input type="image" src="img/tel.png" class="img">
-                <label for="telefono">Numero de telefono:</label>
-                <input type="tel" id=" telefono" name="telefono" required>
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
             </div>
 
             <div class="campo">
@@ -54,20 +51,12 @@
 
             <div class="boton">
                 <input type="submit" value="Enviar Consulta">
-
                 <nav>
                     <a href="Index.html" class="btn-salir">Salir</a>
                 </nav>
             </div>
-
-
         </form>
     </div>
-
-
-
-
-
 
 
 </body>

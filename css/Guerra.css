@@ -236,8 +236,7 @@
         align-items: center;
         justify-content: space-between;
         /* Espacia botón y menú */
-        background-color: rgb(158, 11, 40);
-        padding: 0 2em;
+        padding: 0 0em;
     }
     /* Estilo del botón (☰) */
     
@@ -247,11 +246,11 @@
         color: white;
         padding: 0.90em 1em;
         user-select: none;
-        background-color: transparent;
+        background-color: rgb(158, 11, 40);
         /* evita bloques de color */
         border: none;
         /* asegura que no tenga borde */
-        margin-left: 1rem;
+        margin-left: 0rem;
         /* lo alinea a un lado */
     }
     /* Ocultamos el checkbox */
@@ -276,15 +275,36 @@
     #menu-toggle:checked+.menu-icon+ul {
         display: flex;
     }
+    /* galeria*/
     
     nav ul li a {
-        color: #ddd;
+        color: #ffffff;
         padding: 1em 1.5em;
         display: block;
         text-decoration: none;
         white-space: nowrap;
         font-weight: normal;
-        /* 👈 Sin negrita */
         text-shadow: none;
-        /* 👈 Sin sombra */
+    }
+    
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        padding: 20px;
+        background-color: #000000;
+    }
+    
+    .galeria img {
+        width: 300px;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    
+    .galeria img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
