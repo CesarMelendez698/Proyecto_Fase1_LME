@@ -1,284 +1,290 @@
-/* Reset básico */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* Body */
-
-body {
-    background-color: #0b0b0b;
-    /* negro oscuro */
-    color: crimson;
-    /* naranja */
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
-
-/* Navegación */
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #1a1a1a;
-    /* gris oscuro */
-}
-
-nav ul li {
-    position: relative;
-    /* para submenús */
-}
-
-nav ul li a {
-    display: block;
-    padding: 1em 1.5em;
-    color: crimson;
-    font-weight: bold;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #fff;
-    background-color: crimson;
-}
-
-
-/* Navegación */
-
-nav ul {
-    list-style-type: none;
-    background-color: rgb(158, 11, 40);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    margin: 0;
-    position: relative;
-    /* Necesario para el posicionamiento del submenú */
-}
-
-nav ul li a {
-    color: #ddd;
-    padding: 1em 1.5em;
-    display: block;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-nav ul li a:hover {
-    background: rgba(0, 0, 0, 0.5);
-}
-
-
-/* Submenús (ul dentro de ul) */
-
-nav ul ul {
-    display: none;
-    position: absolute;
-    background-color: rgb(158, 11, 40);
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    min-width: 160px;
-    border-radius: 0 0 5px 5px;
-    z-index: 1000;
-    top: 100%;
-    /* Para que aparezca justo debajo del padre */
-    left: 0;
-}
-
-
-/* Submenús */
-
-nav ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #1a1a1a;
-    border-radius: 0 0 5px 5px;
-    min-width: 160px;
-    z-index: 1000;
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li:hover>ul {
-    display: block;
-}
-
-nav ul ul li a {
-    padding: 0.75em 1em;
-    color: rgb(255, 255, 255);
-}
-
-nav ul ul li a:hover {
-    background-color: rgb(255, 255, 255);
-    color: #0b0b0b;
-}
-
-
-/* Encabezados */
-
-h1 {
-    color: rgb(255, 255, 255);
-    padding: 20px 0;
-    border-bottom: 2px solid crimson;
-}
-
-h2 {
-    color: rgb(255, 255, 255);
-    padding: 15px;
-    background-color: #1a1a1a;
-    border-left: 6px solid crimson;
-    display: inline-block;
-    text-align: center;
-}
-
-
-/* Párrafos */
-
-p {
-    padding: 20px;
-    line-height: 1.6;
-    color: #f2f2f2;
-    background-color: #121212;
-    margin: 10px auto;
-    width: 90%;
-    border-left: 4px solid crimson;
-    text-align: justify;
-}
-
-
-/* Banner principal */
-
-.Cronicas {
-    background-image: url('../img/Banner.32.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    /* altura fija para banner */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 3rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    text-align: center;
-    padding: 0 1rem;
-}
-
-
-/* Imágenes */
-
-img {
-    display: block;
-    margin: 20px auto;
-    height: 400px;
-    /* Altura fija */
-    width: auto;
-    /* Ancho se ajusta automáticamente */
-    object-fit: cover;
-    /* Recorta la imagen sin deformarla */
-    border: 4px solid crimson;
-    border-radius: 20px;
-}
-
-
-/* Div con id para margen */
-
-div[id] {
-    margin-top: 20px;
-}
-
-
-/* Enlaces */
-
-a {
-    color: crimson;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-a:hover {
-    color: #ffffff;
-    background-color: crimson;
-}
-
-
-/* Responsive básico */
-
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+    /* Reset básico */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-    nav ul li {
-        width: 100%;
-    }
-    nav ul li a {
-        padding: 0.75em 1em;
+    /* Body */
+    
+    body {
+        background-color: #0b0b0b;
+        /* negro oscuro */
+        color: crimson;
+        /* naranja */
+        font-family: Arial, sans-serif;
         text-align: center;
     }
-    nav ul ul {
-        position: static;
-        border-radius: 0;
-        min-width: auto;
-        width: 100%;
+    /* Navegación */
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #1a1a1a;
+        /* gris oscuro */
     }
-    nav ul ul li a:hover {
-        background-color: transparent;
+    
+    nav ul li {
+        position: relative;
+        /* para submenús */
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 1em 1.5em;
         color: crimson;
+        font-weight: bold;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: color 0.3s ease, background-color 0.3s ease;
     }
-}
-
-
-/* Escondemos el checkbox */
-
-#menu-toggle {
-    display: none;
-}
-
-
-/* Por defecto, ocultamos el menú */
-
-nav ul {
-    display: none;
-}
-
-
-/* Estilo para el "botón" que abre el menú */
-
-.menu-icon {
-    display: inline-block;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    padding: 1em;
-    font-weight: bold;
-    user-select: none;
-}
-
-
-/* Cuando el checkbox está marcado, mostramos el menú */
-
-#menu-toggle:checked+.menu-icon+ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    background-color: rgb(158, 11, 40);
-    margin: 0;
-    padding: 0;
-}
+    
+    nav ul li a:hover {
+        color: #fff;
+        background-color: crimson;
+    }
+    /* Navegación */
+    
+    nav ul {
+        list-style-type: none;
+        background-color: rgb(158, 11, 40);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    nav ul li {
+        margin: 0;
+        position: relative;
+        /* Necesario para el posicionamiento del submenú */
+    }
+    
+    nav ul li a {
+        color: #ddd;
+        padding: 1em 1.5em;
+        display: block;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    
+    nav ul li a:hover {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    /* Submenús (ul dentro de ul) */
+    
+    nav ul ul {
+        display: none;
+        position: absolute;
+        background-color: rgb(158, 11, 40);
+        margin-top: 0;
+        padding: 0;
+        list-style: none;
+        min-width: 160px;
+        border-radius: 0 0 5px 5px;
+        z-index: 1000;
+        top: 100%;
+        /* Para que aparezca justo debajo del padre */
+        left: 0;
+    }
+    /* Submenús */
+    
+    nav ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #1a1a1a;
+        border-radius: 0 0 5px 5px;
+        min-width: 160px;
+        z-index: 1000;
+        list-style: none;
+        padding: 0;
+    }
+    
+    nav ul li:hover>ul {
+        display: block;
+    }
+    
+    nav ul ul li a {
+        padding: 0.75em 1em;
+        color: rgb(255, 255, 255);
+    }
+    
+    nav ul ul li a:hover {
+        background-color: rgb(255, 255, 255);
+        color: #0b0b0b;
+    }
+    /* Encabezados */
+    
+    h1 {
+        color: rgb(255, 255, 255);
+        padding: 20px 0;
+        border-bottom: 2px solid crimson;
+    }
+    
+    h2 {
+        color: rgb(255, 255, 255);
+        padding: 15px;
+        background-color: #1a1a1a;
+        border-left: 6px solid crimson;
+        display: inline-block;
+        text-align: center;
+    }
+    /* Párrafos */
+    
+    p {
+        padding: 20px;
+        line-height: 1.6;
+        color: #f2f2f2;
+        background-color: #121212;
+        margin: 10px auto;
+        width: 90%;
+        border-left: 4px solid crimson;
+        text-align: justify;
+    }
+    /* Banner principal */
+    
+    .Cronicas {
+        background-image: url('../img/Banner.32.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        /* altura fija para banner */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        text-align: center;
+        padding: 0 1rem;
+    }
+    /* Imágenes */
+    
+    img {
+        display: block;
+        margin: 20px auto;
+        height: 400px;
+        /* Altura fija */
+        width: auto;
+        /* Ancho se ajusta automáticamente */
+        object-fit: cover;
+        /* Recorta la imagen sin deformarla */
+        border: 4px solid crimson;
+        border-radius: 20px;
+    }
+    /* Div con id para margen */
+    
+    div[id] {
+        margin-top: 20px;
+    }
+    /* Enlaces */
+    
+    a {
+        color: crimson;
+        transition: color 0.3s ease, background-color 0.3s ease;
+    }
+    
+    a:hover {
+        color: #ffffff;
+        background-color: crimson;
+    }
+    /* Responsive básico */
+    
+    @media (max-width: 600px) {
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+        nav ul li {
+            width: 100%;
+        }
+        nav ul li a {
+            padding: 0.75em 1em;
+            text-align: center;
+        }
+        nav ul ul {
+            position: static;
+            border-radius: 0;
+            min-width: auto;
+            width: 100%;
+        }
+        nav ul ul li a:hover {
+            background-color: transparent;
+            color: crimson;
+        }
+    }
+    /* Escondemos el checkbox */
+    
+    #menu-toggle {
+        display: none;
+    }
+    /* Por defecto, ocultamos el menú */
+    
+    nav ul {
+        display: none;
+    }
+    /* Estilos base para el nav */
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* Espacia botón y menú */
+        background-color: rgb(158, 11, 40);
+        padding: 0 2em;
+    }
+    /* Estilo del botón (☰) */
+    
+    .menu-icon {
+        display: inline-block;
+        cursor: pointer;
+        color: white;
+        padding: 0.90em 1em;
+        user-select: none;
+        background-color: transparent;
+        /* evita bloques de color */
+        border: none;
+        /* asegura que no tenga borde */
+        margin-left: 1rem;
+        /* lo alinea a un lado */
+    }
+    /* Ocultamos el checkbox */
+    
+    #menu-toggle {
+        display: none;
+    }
+    /* Ocultamos el menú por defecto */
+    
+    nav ul {
+        display: none;
+        width: 150%;
+        list-style: none;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        background-color: rgb(158, 11, 40);
+    }
+    /* Mostramos el menú si el checkbox está activado */
+    
+    #menu-toggle:checked+.menu-icon+ul {
+        display: flex;
+    }
+    
+    nav ul li a {
+        color: #ddd;
+        padding: 1em 1.5em;
+        display: block;
+        text-decoration: none;
+        white-space: nowrap;
+        font-weight: normal;
+        /* 👈 Sin negrita */
+        text-shadow: none;
+        /* 👈 Sin sombra */
+    }
